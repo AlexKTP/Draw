@@ -14,7 +14,7 @@ public class ShapeFactory extends AbstractFactory {
 
 
     @Override
-    IShape getShape(ShapeType shapeType) {
+    IShape createShape(ShapeType shapeType) {
         if(Objects.equals(shapeType, ShapeType.LINE)){
             return new Line();
         } else if (Objects.equals(shapeType, ShapeType.CIRCLE)){
