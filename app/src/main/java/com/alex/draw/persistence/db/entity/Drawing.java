@@ -17,12 +17,12 @@ public class Drawing {
     @ColumnInfo(name = "drawing_name")
     private String name;
 
-    @ColumnInfo(name = "drawing_bitmap")
-    private Bitmap bitmap;
+    @ColumnInfo(name = "drawing_base64img")
+    private String base64img;
 
-    public Drawing(@NonNull String name, @NonNull Bitmap bitmap){
+    public Drawing(@NonNull String name, @NonNull String base64img){
         this.name = name;
-        this.bitmap = bitmap;
+        this.base64img = base64img;
     }
 
     public Long getId() {
@@ -41,11 +41,11 @@ public class Drawing {
         this.name = name;
     }
 
-    public Bitmap getBitmap() {
-        return bitmap;
+    public String getBase64img() {
+        return base64img;
     }
 
-    public void setBitmap(Bitmap bitmap) {
-        this.bitmap = bitmap;
+    public void setBase64img(String base64img) {
+        this.base64img = base64img;
     }
 }

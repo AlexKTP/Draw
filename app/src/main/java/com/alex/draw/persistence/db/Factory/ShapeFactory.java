@@ -2,9 +2,9 @@ package com.alex.draw.persistence.db.Factory;
 
 import com.alex.draw.enums.ShapeType;
 import com.alex.draw.persistence.db.model.Circle;
-import com.alex.draw.persistence.db.model.IShape;
 import com.alex.draw.persistence.db.model.Line;
 import com.alex.draw.persistence.db.model.Rectangle;
+import com.alex.draw.persistence.db.model.Shape;
 import com.alex.draw.persistence.db.model.Square;
 import com.alex.draw.persistence.db.model.Triangle;
 
@@ -14,7 +14,7 @@ public class ShapeFactory extends AbstractFactory {
 
 
     @Override
-    IShape createShape(ShapeType shapeType) {
+    public Shape createShape(ShapeType shapeType) {
         if(Objects.equals(shapeType, ShapeType.LINE)){
             return new Line();
         } else if (Objects.equals(shapeType, ShapeType.CIRCLE)){

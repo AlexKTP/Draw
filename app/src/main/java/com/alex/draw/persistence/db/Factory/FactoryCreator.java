@@ -8,8 +8,6 @@ public class FactoryCreator {
     public static AbstractFactory getFactory(FactoryType factoryType){
         if(Objects.equals(factoryType, FactoryType.CLASSIC)){
             return new ShapeFactory();
-        }else{
-            return null;
-        }
+        } else return null;
     }
 }

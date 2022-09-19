@@ -1,7 +1,6 @@
 package com.alex.draw.persistence.Repository;
 
 import android.app.Application;
-import android.graphics.Bitmap;
 
 import androidx.lifecycle.LiveData;
 
@@ -26,9 +25,9 @@ public class DrawingRepository {
         return allDrawings;
     }
 
-    private void insert(String name, Bitmap bitmap){
+    private void insert(Drawing drawing){
         DrawDataBase.databaseWriteExecutor.execute(()-> {
-            drawingDao.insert(name, bitmap);
+            drawingDao.insert(drawing);
         });
     }
 

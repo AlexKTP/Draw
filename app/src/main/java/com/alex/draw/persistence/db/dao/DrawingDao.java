@@ -22,7 +22,7 @@ public interface DrawingDao {
     public LiveData<List<Drawing>> getAllDrawings();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    public void insert(String name, Bitmap bitmap);
+    public void insert(Drawing drawing);
 
     @Query("SELECT * FROM drawing WHERE DRAWING.drawing_id=:drawingID")
     public LiveData<Drawing> getDrawingById(Long drawingID);
