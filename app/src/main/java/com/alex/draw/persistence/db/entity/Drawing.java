@@ -1,7 +1,5 @@
 package com.alex.draw.persistence.db.entity;
 
-import android.graphics.Bitmap;
-
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

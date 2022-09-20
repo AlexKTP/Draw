@@ -1,7 +1,5 @@
 package com.alex.draw.persistence.db.dao;
 
-import android.graphics.Bitmap;
-
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
